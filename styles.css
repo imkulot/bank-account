@@ -3,7 +3,20 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Background image */
+    background-image: url('img/amp.jpg');
+    background-size: cover;
+    color: rgb(14, 12, 12);
+}
+
+.container1 {
+    max-width: 500px;
     margin: 50px auto;
     padding: 30px;
     border-radius: 10px;

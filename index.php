@@ -105,12 +105,33 @@ $total_sent_sender2 = $receiver->get_balance() - 2000;
         }
 
         .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container1 {
             max-width: 800px;
             margin: 50px auto;
             padding: 30px;
             border-radius: 10px;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container2 {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url('img/amp.jpg');
+            background-size: cover;
+            color: rgb(14, 12, 12);
         }
 
         .form-control {
@@ -146,10 +167,10 @@ $total_sent_sender2 = $receiver->get_balance() - 2000;
 </head>
 
 <body>
-<div class="container">
+<div class="container1"> <br>
     <h1 class="text-center mb-4">Bank Transaction Form</h1>
     <div class="row">
-        <div class="col-md-6">
+        <div class="container">
             <h2>Sender</h2>
             <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                 <div class="mb-3">
@@ -163,7 +184,7 @@ $total_sent_sender2 = $receiver->get_balance() - 2000;
                 <button type="submit" name="deposit_sender" class="btn btn-primary">Send Money</button>
             </form>
         </div>
-        <div class="col-md-6">
+        <div class="container2">
             <h2>Receiver</h2>
             <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                 <div class="mb-3">
